@@ -1,5 +1,5 @@
 # Goodix GTM802 touchscreen driver
-This is a driver for the GTM802 touchscreen controller found in old tablets. I've used (Priit Laes)[https://patchwork.kernel.org/project/linux-input/patch/1449473161-3535-3-git-send-email-plaes@plaes.org/#16453331] code as the source for this driver, as the other one seems to be similar. I've also used the original (ViewPad10e kernel source)[https://web.archive.org/web/20130617230114if_/http://www1.viewsonic.com/support/downloads/drivers/_download/tablet/viewpad10e/ViewPad10e_Kernal_Source_code.zip] to extract some initialization configs.
+This is a driver for the GTM802 touchscreen controller found in old tablets. I've used [Priit Laes](https://patchwork.kernel.org/project/linux-input/patch/1449473161-3535-3-git-send-email-plaes@plaes.org/#16453331) code as the source for this driver, as the other one seems to be similar. I've also used the original [ViewPad10e kernel source](https://web.archive.org/web/20130617230114if_/http://www1.viewsonic.com/support/downloads/drivers/_download/tablet/viewpad10e/ViewPad10e_Kernal_Source_code.zip) to extract some initialization configs.
 
 # Usage on RPi
 Because I've used the majority of the GPIOs on my RPi (using the parallel DPI in 18 bit mode), I had to use the `i2c-gpio` (which conveniently uses GPIOs not in use by the DPI).
